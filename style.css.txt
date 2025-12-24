@@ -1,0 +1,153 @@
+:root {
+  --bg-dark: #0b0b0f;
+  --bg-light: #111118;
+  --text-primary: #ffffff;
+  --text-secondary: #b5b5c0;
+  --accent: #5b7cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+section {
+  padding: 120px 8vw;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.btn-primary {
+  margin-top: 40px;
+  padding: 14px 38px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 30px rgba(91,124,255,0.35);
+}
+
+/* FEATURE VISUAL */
+.feature-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.visual-box {
+  height: 360px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #2b2f77, #5b7cff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.visual-text h2 {
+  font-size: 2.4rem;
+}
+
+.visual-text p {
+  margin-top: 16px;
+  color: var(--text-secondary);
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature-card {
+  background: var(--bg-light);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* PROCESS */
+.process {
+  display: flex;
+  gap: 40px;
+}
+
+.step {
+  flex: 1;
+  background: var(--bg-light);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.step span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* CTA */
+.final-cta {
+  text-align: center;
+  background: linear-gradient(180deg, #0b0b0f, #050507);
+}
+
+.final-cta h2 {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .feature-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .process {
+    flex-direction: column;
+  }
+}

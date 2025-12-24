@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Landing Page</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Build Anything With AI</h1>
+      <p class="hero-subtitle">
+        Design, animate, and launch high-impact experiences in minutes.
+      </p>
+      <button class="btn-primary">Get Started</button>
+    </div>
+  </section>
+
+  <!-- FEATURE VISUAL -->
+  <section class="feature-visual">
+    <div class="visual-box">Live AI Canvas</div>
+    <div class="visual-text">
+      <h2>Visual Creation, Reimagined</h2>
+      <p>
+        Generate layouts, animations, and interactions instantly.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>Fast</h3>
+      <p>From idea to deploy in record time.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Flexible</h3>
+      <p>Pixel-level control without complexity.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Production Ready</h3>
+      <p>No demos. Real, shippable output.</p>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="step">
+      <span>01</span>
+      <p>Describe your idea</p>
+    </div>
+    <div class="step">
+      <span>02</span>
+      <p>Generate visuals</p>
+    </div>
+    <div class="step">
+      <span>03</span>
+      <p>Launch instantly</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final-cta">
+    <h2>Start Building Today</h2>
+    <button class="btn-primary">Launch Now</button>
+  </section>
+
+  <!-- GSAP -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
